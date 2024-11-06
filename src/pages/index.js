@@ -1,14 +1,12 @@
 import Navbar from '../components/Navbar';
 
-const index = () => {
+export default function Home() {
   return (
-    <>
+    <div>
       <Navbar />
-      <div style={{ padding: '20px' }}>
-        <h1>Welcome to the Movie Streaming App</h1>
-      </div>
-    </>
-  )
-}
+      <main style={{ paddingTop: '80px', padding: '20px' }}> {/* Adjusted padding for main content */}
 
-export default index
+      </main>
+    </div>
+  );
+}

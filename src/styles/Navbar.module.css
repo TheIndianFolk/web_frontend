@@ -1,90 +1,41 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #141414; 
-    color: white;
-  }
-  
-  .leftSide {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-right: 30px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navItem {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .navItem:hover {
-    text-decoration: underline;
-  }
-  
-  .rightSide {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
 
-  
-  .searchInput {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .searchButton {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .notificationButton {
-    background: none;
-    border: none;
-    color: white;
-    margin-left: 15px;
-    cursor: pointer;
-  }
-  
-  .loginButton {
-    margin-left: 15px;
-    padding: 8px 12px;
-    background-color: #f00; /* Red background for the login button */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .loginButton:hover {
-    background-color: #c00; /* Darker red on hover */
-  }
-  
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
-  /* Media Query for smaller screens */
-@media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .leftSide, .rightSide {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    .navItem {
-      margin: 5px 0;
-    }
-  }
+.logo a {
+  color: #e50914;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.search {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
